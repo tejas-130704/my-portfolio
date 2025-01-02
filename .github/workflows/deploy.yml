@@ -61,10 +61,10 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Install Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '16' # Match the version you're using
+      -  name: Setup Node.js
+         uses: actions/setup-node@v3
+         with:
+            node-version: '22' # Match the version you're using
 
       - name: Install dependencies
         run: npm install
