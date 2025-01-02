@@ -6,30 +6,21 @@ on:
       - main  # Replace with your branch name
 
 jobs:
-  deploy:
-    runs-on: ubuntu-latest
-
-    steps:name: Deploy
-
-on:
-  push:
-    branches:
-      - main
-
-jobs:
   build:
     name: Build
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
+      - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Setup Node
+      - name: Setup Node.js
         uses: actions/setup-node@v3
+        with:
+          node-version: '22' # Match your Node.js version
 
       - name: Install dependencies
-        uses: bahmutov/npm-install@v1
+        run: npm install
 
       - name: Build project
         run: npm run build
@@ -42,9 +33,8 @@ jobs:
 
   deploy:
     name: Deploy
-    needs: build
+    needs: build  # Ensure this job waits for the 'build' job
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main'
 
     steps:
       - name: Download artifact
@@ -52,25 +42,6 @@ jobs:
         with:
           name: production-files
           path: ./dist
-
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
-      - name: Checkout code
-        uses: actions/checkout@v3
-
-      -  name: Setup Node.js
-         uses: actions/setup-node@v3
-         with:
-            node-version: '22' # Match the version you're using
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Build project
-        run: npm run build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
