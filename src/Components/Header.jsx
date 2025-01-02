@@ -97,14 +97,14 @@ export const Header = () => {
             data-aos="zoom-in"
             className=" p-8 flex flex-col items-center justify-center space-y-3 ">
             <FaBriefcase size={40} />
-            <p className="text-5xl">50+</p>
+            <p className="text-5xl">5+</p>
             <h1 className="font-thin text-gray-200">Projects</h1>
           </div>
           <div
             data-aos="zoom-in"
             className=" p-8 flex flex-col items-center justify-center space-y-3 ">
             <FaCode size={40} />
-            <p className="text-5xl">15+</p>
+            <p className="text-5xl">10+</p>
             <h1 className="font-thin text-gray-200">Programming Language</h1>
           </div>
           <div
@@ -118,7 +118,7 @@ export const Header = () => {
             data-aos="zoom-in"
             className=" p-8 flex flex-col items-center justify-center space-y-3 ">
             <GiRibbonMedal size={40} />
-            <p className="text-5xl">10+</p>
+            <p className="text-5xl">3+</p>
             <h1 className="font-thin text-gray-200">Competition Winner</h1>
           </div>
         </div>
