@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react';
 import myImg from '../assets/images/TJ1.png';
 import { useEffect } from 'react';
-import { FaTwitter, FaInstagram, FaLinkedin, FaFacebookMessenger, FaBriefcase, FaCode } from 'react-icons/fa';
+import { FaTwitter, FaInstagram, FaLinkedin, FaFacebookMessenger, FaBriefcase, FaCode, FaGithub } from 'react-icons/fa';
 import { BsPersonWorkspace } from "react-icons/bs";
 import { GiRibbonMedal } from "react-icons/gi";
 
@@ -60,16 +60,16 @@ export const Header = () => {
             <button className='w-full h-full text-center'>See My Resume</button>
           </a>
           <div className="flex justify-evenly mt-10 space-x-4  relative top-6 ">
-            <a href="#messenger" className="bg-gray-200 p-3 rounded-full hover:bg-gray-900 hover:text-white  shadow-xl animate-in slide-in-from-left duration-1000">
-              <FaFacebookMessenger size={30} />
+            <a href="https://github.com/tejas-130704/" target='_blank' className="bg-gray-200 p-3 rounded-full hover:bg-gray-900 hover:text-white  shadow-xl animate-in slide-in-from-left duration-1000">
+              <FaGithub size={30} />
             </a>
-            <a href="#twitter" className="bg-gray-200 p-3 rounded-full hover:bg-gray-900 hover:text-white shadow-xl animate-in slide-in-from-left duration-1000">
+            <a href="https://x.com/TejasJadha86720" target='_blank' className="bg-gray-200 p-3 rounded-full hover:bg-gray-900 hover:text-white shadow-xl animate-in slide-in-from-left duration-1000">
               <FaTwitter size={30} />
             </a>
-            <a href="#instagram" className="bg-gray-200 p-3 rounded-full hover:bg-gray-900 hover:text-white shadow-xl animate-in slide-in-from-left duration-1000">
+            <a href="https://www.instagram.com/tej13_07/" target='_blank' className="bg-gray-200 p-3 rounded-full hover:bg-gray-900 hover:text-white shadow-xl animate-in slide-in-from-left duration-1000">
               <FaInstagram size={30} />
             </a>
-            <a href="#linkedin" className="bg-gray-200 p-3 rounded-full hover:bg-gray-900 hover:text-white shadow-xl animate-in slide-in-from-left duration-1000">
+            <a href="https://www.linkedin.com/in/tejas-jadhav-385613256/" target='_blank' className="bg-gray-200 p-3 rounded-full hover:bg-gray-900 hover:text-white shadow-xl animate-in slide-in-from-left duration-1000">
               <FaLinkedin size={30} />
             </a>
           </div>

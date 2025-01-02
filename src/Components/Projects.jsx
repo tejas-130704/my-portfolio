@@ -4,11 +4,11 @@ import { FaLink } from "react-icons/fa6";
 
 const Projects = () => {
     return (
-        <div 
-        className='mt-36 relative px-20 ' id='projects'>
+        <div
+            className='mt-36 relative px-20 ' id='projects'>
             <div
-            data-aos="zoom-in" 
-            className='w-full text-center'>
+                data-aos="zoom-in"
+                className='w-full text-center'>
                 <div
                     className='text-7xl lg:text-9xl'
                     style={{
@@ -25,42 +25,53 @@ const Projects = () => {
             <div className='grid grid-cols-1 lg:grid-cols-3 gap-10 mt-14'>
 
                 <div
-                data-aos="flip-right" 
-                className='p-6 rounded-lg hover:shadow-xl flex flex-col hover:bg-gradient-to-br from-[#4d31aa5b] to-[#3795bd70] items-center space-y-4 mx-auto'>
+                    data-aos="flip-right"
+                    className='p-6 rounded-lg hover:shadow-xl flex flex-col hover:bg-gradient-to-br from-[#4d31aa5b] to-[#3795bd70] items-center space-y-4 mx-auto'>
                     <h1 className='text-3xl text-center'>PrepMate: AI Interviewer</h1>
                     <p className='text-sm text-gray-700 text-center font-thin'>
                         An AI-driven platform offering virtual interviews in a video meeting interface. It provides instant feedback, highlights areas for improvement, and boosts candidate confidence.
                     </p>
                 </div>
                 <div
-                data-aos="flip-up"
-                 className='relative p-6 rounded-lg hover:shadow-xl flex flex-col hover:bg-gradient-to-br from-[#4d31aa5b] to-[#3795bd70] items-center space-y-4 mx-auto'>
+                    data-aos="flip-up"
+                    className='relative p-6 rounded-lg hover:shadow-xl flex flex-col hover:bg-gradient-to-br from-[#4d31aa5b] to-[#3795bd70] items-center space-y-4 mx-auto'>
 
-                <a href='https://tejas07.pythonanywhere.com/TravelMate/' className="absolute text-black  hover:shadow-xl p-3 rounded-full -top-2 right-0" target='_blank'>
-                <FaLink size={40} /></a>
+                    <a href='https://tejas07.pythonanywhere.com/TravelMate/' className="absolute text-black  hover:shadow-xl p-3 rounded-full -top-2 right-0" target='_blank'>
+                        <FaLink size={40} /></a>
 
                     <h1 className='text-3xl text-center'>TravelMate: Tourist Safety</h1>
                     <p className='text-sm text-gray-700 text-center font-thin'>
                         A web-based platform ensuring tourist safety with crime analysis, safety reports, and interactive maps. Key features include SOS calls, incident reporting, and financial fraud evaluation.
                     </p>
                 </div>
-                <div 
-                data-aos="flip-left"
-                className='relative p-6 rounded-lg hover:shadow-xl flex flex-col hover:bg-gradient-to-br from-[#4d31aa5b] to-[#3795bd70] items-center space-y-4 mx-auto'>
+                <div
+                    data-aos="flip-left"
+                    className='relative p-6 rounded-lg hover:shadow-xl flex flex-col hover:bg-gradient-to-br from-[#4d31aa5b] to-[#3795bd70] items-center space-y-4 mx-auto'>
                     <h1 className='text-3xl text-center'>ChatMate: Chatting App</h1>
                     <p className='text-sm text-gray-700 text-center font-thin'>
                         A real-time chatting app designed for seamless communication with user-friendly interfaces, secure messaging, and integrated multimedia sharing.
                     </p>
                 </div>
                 <div
-                data-aos="flip-left" 
-                className='relative p-6 rounded-lg hover:shadow-xl flex flex-col hover:bg-gradient-to-br from-[#4d31aa5b] to-[#3795bd70] items-center space-y-4 mx-auto'>
-                <a href='https://github.com/tejas-130704/whatsapp-analyser' className="text-black  hover:shadow-xl p-3 rounded-full absolute top-0 right-0" target='_blank'>
+                    data-aos="flip-left"
+                    className='relative p-6 rounded-lg hover:shadow-xl flex flex-col hover:bg-gradient-to-br from-[#4d31aa5b] to-[#3795bd70] items-center space-y-4 mx-auto'>
+                    <a href='https://github.com/tejas-130704/whatsapp-analyser' className="text-black  hover:shadow-xl p-3 rounded-full absolute top-0 right-0" target='_blank'>
                         <SiGithub size={48} />
                     </a>
                     <h1 className='text-3xl text-center'>WhatsApp ChatAnalyser</h1>
                     <p className='text-sm text-gray-700 text-center font-thin'>
                         A tool for analyzing WhatsApp chat data, providing insights into conversation trends, most active participants, and sentiment analysis.
+                    </p>
+                </div>
+                <div
+                    data-aos="flip-up"
+                    className='relative p-6 rounded-lg hover:shadow-xl flex flex-col hover:bg-gradient-to-br from-[#4d31aa5b] to-[#3795bd70] items-center space-y-4 mx-auto'>
+                    <a href='https://github.com/tejas-130704/Fitness' className="text-black  hover:shadow-xl p-3 rounded-full absolute top-0 right-0" target='_blank'>
+                        <SiGithub size={48} />
+                    </a>
+                    <h1 className='text-3xl text-center'>ReClaim-Fitness</h1>
+                    <p className='text-sm text-gray-700 text-center font-thin'>
+                        Reclaim Fitness is a dynamic platform designed to help users reclaim their fitness journey. Utilizing HTML, CSS, JavaScript, PHP, and MySQL, it offers an engaging and interactive experience. Users can access personalized workout plans, nutrition guides, and tools for tracking their fitness progress.
                     </p>
                 </div>
 
