@@ -46,13 +46,16 @@ export const Navbar = () => {
                     <li className="p-2 lg:p-0">
                         <a href="#aboutMe" className="hover:text-[#3795BD] block lg:inline-block">About Me</a>
                     </li>
+                    
                 </ul>
 
                 {/* CTA Button */}
+                <a href="https://tejas-130704.github.io/TejAI/">
                 <button className="hidden lg:block bg-[#3795BD] text-white py-2 px-4 rounded-lg hover:bg-[#3795BD]">
                     
                     LET'S TALK
                 </button>
+                </a>
             </nav>
         </>
     )
