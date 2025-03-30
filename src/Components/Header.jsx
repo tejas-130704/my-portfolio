@@ -56,7 +56,7 @@ export const Header = () => {
           <p
             className="mt-4 text-3xl font-medium text-[#4E31AA] h-10 delay-75"
           >{text}</p>
-          <a className="border-2 border-[#3795BD] text-[#3795BD] hover:text-white py-2 rounded-lg hover:bg-[#3795BD] mt-6 animate-in slide-in-from-bottom duration-300 " href='https://drive.google.com/file/d/1frPL3gIf_2hy4_sjZXuW8r0bQBu3c9Kz/view?usp=sharing' target='_blank' rel='noreferrer'>
+          <a className="border-2 border-[#3795BD] text-[#3795BD] hover:text-white py-2 rounded-lg hover:bg-[#3795BD] mt-6 animate-in slide-in-from-bottom duration-300 " href='https://drive.google.com/file/d/1_m2Xq-BZ9yNxC5jRmZ-Nm3B_nlorJsj0/view?usp=sharing' target='_blank' rel='noreferrer'>
             <button className='w-full h-full text-center'>See My Resume</button>
           </a>
           <div className="flex justify-evenly mt-10 space-x-4  relative top-6 ">
