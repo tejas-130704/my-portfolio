@@ -3,7 +3,7 @@ name: Deploy Vite + React App
 on:
   push:
     branches:
-      - main  # Replace with your branch name
+      - main  # Replace with your deployment branch
 
 jobs:
   build:
@@ -12,12 +12,12 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4  # ✅ Use latest version if possible
 
       - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4  # ✅ Use latest setup-node
         with:
-          node-version: '22' # Match your Node.js version
+          node-version: '22'
 
       - name: Install dependencies
         run: npm install
@@ -26,19 +26,22 @@ jobs:
         run: npm run build
 
       - name: Upload production-ready build files
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: production-files
           path: ./dist
 
   deploy:
     name: Deploy
-    needs: build  # Ensure this job waits for the 'build' job
+    needs: build
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4  # ✅ Needed for gh-pages deploy
+
       - name: Download artifact
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: production-files
           path: ./dist
