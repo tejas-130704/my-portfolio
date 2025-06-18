@@ -117,7 +117,7 @@ const Education = () => {
                             <img className="w-full h-auto object-fill" src={cert.image} alt={cert.alt} />
                         </div>
                         <div className="px-6 py-4 flex flex-col justify-between flex-grow">
-                            <div className="font-bold text-xl mb-2 font-sans">
+                            <div className="font-bold text-xl my-2 font-sans">
                                 {cert.title}
                             </div>
                             <a href={cert.link} target='_blank' rel='noreferrer'>
